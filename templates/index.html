@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>一般画像分類</title>
+</head>
+<body>
+  <h1>画像分類を実行します。画像ファイルを選択してください。</h1>
+  <form method="post" action="/send" enctype="multipart/form-data">
+    <input type="file" id="img_file" name="img_file">
+    <input type="submit" value="画像を送信してカテゴリ分類実行">
+  </form>
+  <p>
+  {% if raw_img_url %}
+    <img src="{{ raw_img_url }}">
+  {% endif %}
+  </p>
+  <p>
+  {% if pred_name %}
+    <h1>{{ pred_name }}</h1>
+  {% endif %}
+  </p>
+</body>
+</html>

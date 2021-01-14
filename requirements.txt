@@ -1,0 +1,8 @@
+Flask>=1.0,<=1.1.2
+opencv-python
+Pillow
+opencv-python-headless
+azure-cognitiveservices-vision-customvision
+Keras==2.3.1
+tensorflow==1.14.0
+h5py==2.10
